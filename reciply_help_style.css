@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Homemade+Apple|Open+Sans|Roboto");
+
+/* ALL OF THE HEADER CODE */
+/*css reset code by user 'Brian Ogden' on stackoverflow: https://stackoverflow.com/questions/18772154/white-space-at-top-of-page/18772399*/
+* {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+    }
+
+/* the header, including logo, search bar and nav menu */
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+/* the top navigation menu */
+header>nav {
+    width: 100vw;
+    background-color: black;
+    text-align: center;
+    height: 30px;
+    padding: 0px 0px 10px 0px;
+}
+
+header>nav>ul {
+  list-style-type: none;
+  width: 100vw;
+}
+
+/* each box in the top navigation menu */
+header>nav>ul>li {
+  display: inline-block;
+  background-color: black;
+  width: 15%;
+  text-align: center;
+  border-left: groove white 0.5px;
+  border-right: groove white 0.5px;
+  height: 30px;
+  }
+  
+.right_most {
+  border-right: black;
+}
+
+.left_most {
+  border-left: black;
+}
+
+/* when a user hovers over a box in the nav bar */
+header>nav>ul>li>a:hover {
+    color: orange;
+}
+/*each link in the top nav menu */
+header>nav>ul>li>a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Roboto', open sans;
+  vertical-align: baseline;
+  font-size: 1vw;
+}
+
+/* 'Reciply' logo on top left-hand corner of the page */
+.logo_title {
+    padding: 10px 0px 30px 0px;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 60px;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+/* for each icon */
+i {
+    color: orange;
+}
+/* END OF ALL THE HEADER CODE*/
+
+/*END OF HEADER CODE*/
+
+/* the text box that shows helpful information*/
+.info {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    text-align: justify;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    width: 40vw;
+    padding: 30px 60px;
+    font-size: 22px;
+    margin-top: auto;
+    margin-bottom: auto;
+    overflow: scroll;
+    height: 350px;
+}
+
+/*the vertical navigation bar for help menu */
+.vertical_help_nav {
+  background-color: white;
+  width: 20vw;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  height: 300px;
+  overflow: scroll;
+}
+
+.vertical_help_nav>nav>ul>li:hover {
+  background-color: grey;
+  color: white;
+}
+
+.vertical_help_nav>nav>ul>li>a {
+  color: black;
+  text-decoration: none;
+}
+
+.vertical_help_nav>nav>ul>li {
+  font-size: 1.5vw;
+  list-style-type: none;
+  padding: 15px;
+  border-top: solid black 1px;
+  border-bottom: solid black 1px;
+  height: 50px;
+}
+
+/*Includes all elements below the header (the grey box on the login and create account pages)*/
+.text_box>ul>li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 10px;
+}
+
+/*the page title below the navigation bar on every page*/
+.page_title {
+    font-family: 'Abril Fatface', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.text_box {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+}
+
+.selected {
+  background-color: rgb(0, 100, 100);
+}

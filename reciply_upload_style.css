@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Homemade+Apple|Open+Sans|Roboto");
+
+/* ALL OF THE HEADER CODE */
+/*css reset code by user 'Brian Ogden' on stackoverflow: https://stackoverflow.com/questions/18772154/white-space-at-top-of-page/18772399*/
+* {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+    }
+
+/* the header, including logo, search bar and nav menu */
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+/* the top navigation menu */
+header>nav {
+    width: 100vw;
+    background-color: black;
+    text-align: center;
+    height: 30px;
+    padding: 0px 0px 10px 0px;
+}
+
+header>nav>ul {
+  list-style-type: none;
+  width: 100vw;
+}
+
+/* each box in the top navigation menu */
+header>nav>ul>li {
+  display: inline-block;
+  background-color: black;
+  width: 15%;
+  text-align: center;
+  border-left: groove white 0.5px;
+  border-right: groove white 0.5px;
+  height: 30px;
+  }
+  
+.right_most {
+  border-right: black;
+}
+
+.left_most {
+  border-left: black;
+}
+
+/* when a user hovers over a box in the nav bar */
+header>nav>ul>li>a:hover {
+    color: orange;
+}
+/*each link in the top nav menu */
+header>nav>ul>li>a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Roboto', open sans;
+  vertical-align: baseline;
+  font-size: 1vw;
+}
+
+/* 'Reciply' logo on top left-hand corner of the page */
+.logo_title {
+    padding: 10px 0px 30px 0px;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 60px;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+/* END OF ALL THE HEADER CODE*/
+
+/*the page title below the navigation bar on every page*/
+.page_title {
+    font-family: 'Abril Fatface', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/*Includes all elements below the header (the grey box on the login and create account pages)*/
+.text_box {
+    padding: 2vw 10vw;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+.input_box {
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 10px;
+  color: grey;
+  width: 35vw;
+}
+
+.button {
+  border-color: black;
+  border-width: 1px;
+  border-style: groove;
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: orange; 
+}
+
+.mini_title {
+  font-size: 20px;
+  font-family: 'Abril Fatface', sans-serif;
+}
